@@ -1,0 +1,17 @@
+<div class="container">  
+    <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="htmlPost">POST request</label>
+            <textarea class="form-control" rows="30" placeholder="Example: key1=value1&key2=value2"
+             (input)="json = convert($event.target.value)"></textarea>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="jsonPayload">JSON payload</label>
+            <textarea class="form-control" rows="30" readonly>{{json}}</textarea>
+          </div>
+        </div>
+    </div>
+</div>
