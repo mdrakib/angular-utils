@@ -4,6 +4,7 @@ node_js:
 install:
   - npm install -g @angular/cli
   - npm install
+script:
   - ng build --prod
 deploy:
   provider: surge
