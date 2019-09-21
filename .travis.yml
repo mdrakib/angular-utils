@@ -1,3 +1,10 @@
+language: node_js
+node_js:
+  - 10
+install:
+  - npm install -g @angular/cli
+  - npm install
+  - ng build --prod
 deploy:
   provider: surge
   project: ./dist/
